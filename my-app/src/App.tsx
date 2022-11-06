@@ -18,7 +18,11 @@ function App() {
     <div className="App">
       {/* variable prop */}
       <Greet name="Arthur" messageCount={20} isLoggedIn={false} />
+
+      {/* object prop */}
       <Person name={personName} />
+
+      {/* Array prop */}
       <PersonList names={nameList} />
     </div>
   );
