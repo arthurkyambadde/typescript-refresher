@@ -1,6 +1,8 @@
 import "./App.css";
+import Button from "./Components/Button";
 import Greet from "./Components/Greet";
 import Heading from "./Components/Heading";
+import Input from "./Components/Input";
 import Oscar from "./Components/Oscar";
 import Person from "./Components/Person";
 import PersonList from "./Components/PersonList";
@@ -37,6 +39,20 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to dicaprio!</Heading>
       </Oscar>
+
+      {/* events as props */}
+      <Button
+        handleClick={(event) => {
+          console.log("button has been clicked", event);
+        }}
+      />
+
+      <Input
+        value=""
+        handleChange={(event) => {
+          console.log(event);
+        }}
+      />
     </div>
   );
 }

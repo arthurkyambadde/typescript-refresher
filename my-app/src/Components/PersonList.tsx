@@ -7,7 +7,7 @@ export default function PersonList(props: PersonListProps) {
     <div>
       {props.names.map((name) => {
         return (
-          <h2 key={name.first}>
+          <h2 key={name.last}>
             {name.first} {name.last}
           </h2>
         );
