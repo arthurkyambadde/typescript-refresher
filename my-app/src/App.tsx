@@ -1,11 +1,15 @@
 import "./App.css";
 import Button from "./Components/Button";
+import Container from "./Components/Container";
 import Greet from "./Components/Greet";
 import Heading from "./Components/Heading";
 import Input from "./Components/Input";
 import Oscar from "./Components/Oscar";
 import Person from "./Components/Person";
 import PersonList from "./Components/PersonList";
+import Counter from "./Components/state/Counter";
+import LoggedIn from "./Components/state/LoggedIn";
+import User from "./Components/state/User";
 import Status from "./Components/Status";
 
 function App() {
@@ -53,6 +57,19 @@ function App() {
           console.log(event);
         }}
       />
+
+      {/* styles props */}
+      <Container styles={{ border: "1px solid red", padding: "1rem" }} />
+      {/* // use statehook */}
+
+      <LoggedIn />
+
+      {/* use state with future */}
+
+      <User />
+
+      {/* use reducer hook and usereducer strict */}
+      <Counter />
     </div>
   );
 }
